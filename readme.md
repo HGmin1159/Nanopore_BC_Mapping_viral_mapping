@@ -6,24 +6,6 @@ This repository contains a pipeline to generate a **barcode-to-element mapping t
 
 ---
 
-## 📁 Repository Structure
-
-.
-├── config/
-│   └── config.yaml                # Configuration file for the pipeline
-├── module/
-│   ├── A1.transform_to_csv.py     # Converts BAM to raw CSV
-│   ├── A2.Split_Reads_Dask.py     # Splits reads using anchor sequences
-│   ├── A3.mathcing_variant.py     # Matches variants and adds names
-│   ├── A4.analysis.py             # Generates barcode and variant statistics
-│   └── finding_ref_seq.py         # Module to find the mismatching sequences
-├── result/                        # Output files
-├── logs/                          # SLURM log files
-├── snakefile                      # Snakemake pipeline file
-└── run_snakemake_example.sh                # SLURM batch submission script
-
----
-
 ## ⚙️ Environment
 
 The pipeline has been tested with the following versions:
