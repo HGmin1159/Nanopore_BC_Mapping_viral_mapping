@@ -59,12 +59,12 @@ bash run_pipeline.sh
 📊 Output Files
 
 > File	Description  
-> result/raw_reads.csv	Raw reads converted from BAM  
-> result/var_bc_reads.csv	Parsed reads based on anchor sequences  
-> result/var_bc_reads_named.csv	Reads annotated with variant information  
-> result/barcode_statistcs.csv	Barcode-level statistics  
-> result/variant_statistcs.csv	Variant-level statistics  
-> result/bc_mapping.csv	Final barcode-to-element mapping table  
+> result/raw_reads.csv	# Raw reads converted from BAM  
+> result/var_bc_reads.csv	# Parsed reads based on anchor sequences  
+> result/var_bc_reads_named.csv	# Reads annotated with variant information  
+> result/barcode_statistcs.csv	# Barcode-level statistics  
+> result/variant_statistcs.csv	# Variant-level statistics  
+> result/bc_mapping.csv	# Final barcode-to-element mapping table  
 
 
 
