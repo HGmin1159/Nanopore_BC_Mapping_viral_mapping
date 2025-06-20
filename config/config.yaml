@@ -1,0 +1,9 @@
+input_seq: "/proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap/250430_PBC35003_PR_AAV9_VB_KatMap.dorado.0.9.1.hac.bam"
+input_format: "bam"
+anchor_seq:
+  - "TATATGGAGTTCCGACGCGT"
+  - "GGTACCGTGATGCGGTTTTG"
+  - "AGATCGCCGTGTAATCTAGA"
+  - "ACTAGTGATACCGAGCGCTG"
+output_dir: "/proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap"
+variant_dict: "/proj/hyejunglab/MPRA/variant/variant4_SCZ_BD/mpra_SCZ_posneg.txt"

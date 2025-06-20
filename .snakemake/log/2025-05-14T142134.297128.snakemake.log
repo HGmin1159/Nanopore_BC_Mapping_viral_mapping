@@ -1,0 +1,49 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 45
+Job counts:
+	count	jobs
+	1	all
+	1	match_variant
+	1	split_reads_dask
+	1	transform_to_csv
+	4
+
+[Wed May 14 14:21:34 2025]
+rule transform_to_csv:
+    input: /proj/hyejunghtsf/HTSF/250430_PBC13069_AAV9_V8_AlejandroMap/250430_PBC13069_AAV9_V8_AlejandroMap.dorado.0.9.1.hac.bam
+    output: result/raw_reads.csv
+    jobid: 3
+
+Submitted job 3 with external jobid 'Submitted batch job 1417789'.
+[Wed May 14 14:53:16 2025]
+Finished job 3.
+1 of 4 steps (25%) done
+
+[Wed May 14 14:53:16 2025]
+rule split_reads_dask:
+    input: result/raw_reads.csv
+    output: result/var_bc_reads.csv
+    jobid: 2
+
+Submitted job 2 with external jobid 'Submitted batch job 1419077'.
+[Wed May 14 14:53:26 2025]
+Error in rule split_reads_dask:
+    jobid: 2
+    output: result/var_bc_reads.csv
+    shell:
+        
+        module load anaconda
+        conda activate anaconda_env
+        module del anaconda
+
+        python module/A2.Split_Reads_Dask.py \~
+            --raw_csv result/raw_reads.csv             --output_csv result/var_bc_reads.csv             --ref_seqs "TATATGGAGTTCCGACGCGT,GGTACCGTGATGCGGTTTTG,AGATCGCCGTGTAATCTAGA,ACTAGTGATACCGAGCGCTG"             --n_workers 32             --mem_per_worker 9GB
+        
+        (exited with non-zero exit code)
+    cluster_jobid: Submitted batch job 1419077
+
+Error executing rule split_reads_dask on cluster (jobid: 2, external: Submitted batch job 1419077, jobscript: /proj/hyejunglab/MPRA/RNAseq/SCZ/scMPRA/Alejandro_Nanopore_BC_Mapping_viral_mapping/.snakemake/tmp.4rwaj3p3/snakejob.split_reads_dask.2.sh). For detailed error see the cluster log.
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /proj/hyejunglab/MPRA/RNAseq/SCZ/scMPRA/Alejandro_Nanopore_BC_Mapping_viral_mapping/.snakemake/log/2025-05-14T142134.297128.snakemake.log

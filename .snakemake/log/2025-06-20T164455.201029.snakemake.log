@@ -1,0 +1,37 @@
+Building DAG of jobs...
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/raw_reads.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/var_bc_reads.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/var_bc_reads_named.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/barcode_statistcs.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/variant_statistcs.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/bc_mapping.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/raw_reads.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/raw_reads.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/var_bc_reads.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/var_bc_reads.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/var_bc_reads_named.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/var_bc_reads_named.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/barcode_statistcs.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/variant_statistcs.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/bc_mapping.csv contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 45
+Job counts:
+	count	jobs
+	1	all
+	1	analysis
+	1	match_variant
+	1	split_reads_dask
+	1	transform_to_csv
+	5
+
+[Fri Jun 20 16:44:55 2025]
+rule transform_to_csv:
+    input: /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap/250430_PBC35003_PR_AAV9_VB_KatMap.dorado.0.9.1.hac.bam
+    output: /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap//result/raw_reads.csv
+    jobid: 1
+
+Submitted job 1 with external jobid 'Submitted batch job 6132906'.
+Terminating processes on user request, this might take some time.
+Will exit after finishing currently running jobs.
+Complete log: /proj/hyejunglab/MPRA/RNAseq/SCZ/scMPRA/Nanopore_BC_Mapping_viral_mapping/.snakemake/log/2025-06-20T164455.201029.snakemake.log

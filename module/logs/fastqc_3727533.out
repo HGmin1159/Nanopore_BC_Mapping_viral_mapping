@@ -1,0 +1,48 @@
+text/plain
+Started analysis of Rawreads.fastq
+Approx 5% complete for Rawreads.fastq
+Approx 10% complete for Rawreads.fastq
+Approx 15% complete for Rawreads.fastq
+Approx 20% complete for Rawreads.fastq
+Approx 25% complete for Rawreads.fastq
+Approx 30% complete for Rawreads.fastq
+Approx 35% complete for Rawreads.fastq
+Approx 40% complete for Rawreads.fastq
+Approx 45% complete for Rawreads.fastq
+Approx 50% complete for Rawreads.fastq
+Approx 55% complete for Rawreads.fastq
+Approx 60% complete for Rawreads.fastq
+Approx 65% complete for Rawreads.fastq
+Approx 70% complete for Rawreads.fastq
+Approx 75% complete for Rawreads.fastq
+Approx 80% complete for Rawreads.fastq
+Approx 85% complete for Rawreads.fastq
+Approx 90% complete for Rawreads.fastq
+Approx 95% complete for Rawreads.fastq
+Approx 100% complete for Rawreads.fastq
+It seems our guess for the total number of records wasn't very good.  Sorry about that.
+Still going at 105% complete for Rawreads.fastq
+Still going at 110% complete for Rawreads.fastq
+Still going at 115% complete for Rawreads.fastq
+Still going at 120% complete for Rawreads.fastq
+Still going at 125% complete for Rawreads.fastq
+Still going at 130% complete for Rawreads.fastq
+Still going at 135% complete for Rawreads.fastq
+Still going at 140% complete for Rawreads.fastq
+Still going at 145% complete for Rawreads.fastq
+Still going at 150% complete for Rawreads.fastq
+Still going at 155% complete for Rawreads.fastq
+Still going at 160% complete for Rawreads.fastq
+Still going at 165% complete for Rawreads.fastq
+Analysis complete for Rawreads.fastq
+
+/// MultiQC 🔍 v1.28
+
+     version_check | MultiQC Version v1.29 now available!
+       file_search | Search path: /proj/hyejunglab/MPRA/RNAseq/SCZ/scMPRA/Alejandro_Nanopore_BC_Mapping_viral_mapping/result
+
+            fastqc | Found 1 reports
+
+     write_results | Data        : multiqc_data
+     write_results | Report      : multiqc_report.html
+           multiqc | MultiQC complete

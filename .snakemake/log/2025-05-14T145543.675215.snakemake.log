@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 45
+Job counts:
+	count	jobs
+	1	all
+	1	match_variant
+	1	split_reads_dask
+	3
+
+[Wed May 14 14:55:43 2025]
+rule split_reads_dask:
+    input: result/raw_reads.csv
+    output: result/var_bc_reads.csv
+    jobid: 2
+
+Submitted job 2 with external jobid 'Submitted batch job 1419128'.
+[Wed May 14 17:53:33 2025]
+Finished job 2.
+1 of 3 steps (33%) done
+
+[Wed May 14 17:53:33 2025]
+rule match_variant:
+    input: result/var_bc_reads.csv
+    output: result/var_bc_reads_named.csv
+    jobid: 1
+
+Submitted job 1 with external jobid 'Submitted batch job 1432411'.
+[Fri May 16 17:08:37 2025]
+Finished job 1.
+2 of 3 steps (67%) done
+
+[Fri May 16 17:08:37 2025]
+localrule all:
+    input: result/var_bc_reads_named.csv
+    jobid: 0
+
+[Fri May 16 17:08:37 2025]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /proj/hyejunglab/MPRA/RNAseq/SCZ/scMPRA/Alejandro_Nanopore_BC_Mapping_viral_mapping/.snakemake/log/2025-05-14T145543.675215.snakemake.log

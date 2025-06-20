@@ -1,0 +1,8 @@
+---
+__default__:
+  time: "2-00:00"
+  threads: 1
+  mem: 300G
+  queue: "general"
+  error: "logs/%x_%j_%N.err"
+  output: "logs/%x_%j_%N.log"
