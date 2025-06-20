@@ -41,44 +41,39 @@ variant_dict: "/your/pathto/variant_dict.csv"
 
 
 🚀 Running the Pipeline
-	1.	Install dependencies (recommended: via conda):
-
+1. Install dependencies (recommended: via conda):
+```
 conda create -n mpra_env python=3.8
 conda activate mpra_env
-
 pip install pysam pandas dask faiss-cpu python-Levenshtein snakemake==5.5.4
+```
+2. Set up the configuration files in config/config.yaml with your setting.
 
-	2.	Run the pipeline:
-
+3. Run the pipeline:
+```
 bash run_pipeline.sh
-
-	3.	Dry run for debugging:
-
-snakemake --configfile config/config.yaml -n
-
-
+```
 
 ⸻
 
 📊 Output Files
 
-File	Description
-result/raw_reads.csv	Raw reads converted from BAM
-result/var_bc_reads.csv	Parsed reads based on anchor sequences
-result/var_bc_reads_named.csv	Reads annotated with variant information
-result/barcode_statistcs.csv	Barcode-level statistics
-result/variant_statistcs.csv	Variant-level statistics
-result/bc_mapping.csv	Final barcode-to-element mapping table
+> File	Description
+> result/raw_reads.csv	Raw reads converted from BAM
+> result/var_bc_reads.csv	Parsed reads based on anchor sequences
+> result/var_bc_reads_named.csv	Reads annotated with variant information
+> result/barcode_statistcs.csv	Barcode-level statistics
+> result/variant_statistcs.csv	Variant-level statistics
+> result/bc_mapping.csv	Final barcode-to-element mapping table
 
 
 
-⸻
-
+---
 📌 Notes
-	- 	This pipeline was developed by the Hyejung Won Lab at UNC Chapel Hill.
-	- 	It was used in an in vivo MPRA experiment with custom reporter constructs.
-    -   This script is currently tailored to a specific plasmid configuration, but we plan to update it in the future to support more general plasmid settings.
-⸻
+- This pipeline was developed by the Hyejung Won Lab at UNC Chapel Hill.
+- It was used in an in vivo MPRA experiment with custom reporter constructs.
+- This script is currently tailored to a specific plasmid configuration, but we plan to update it in the future to support more general plasmid settings.
+---
 
 📫 Contact
 
