@@ -1,10 +1,9 @@
 # %%
-import pandas as pd
 import dask.dataframe as dd
 import logging
-import matplotlib.pyplot as plt
 import dask.dataframe as dd
 import argparse
+from collections import Counter
 
 
 args = argparse.ArgumentParser(description="Process and filter barcode data.")

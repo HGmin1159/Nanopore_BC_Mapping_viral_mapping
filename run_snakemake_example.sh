@@ -1,15 +1,8 @@
 #!/bin/bash
 #SBATCH -t 11-00:00:00
 #SBATCH --output=logs/%x_%j.out
-#SBATCH --mail-user=mhg@unc.edu
-#SBATCH --mail-type=end,fail,begin
 #SBATCH --job-name=snakemake
 #SBATCH --export=ALL
-
-module purge
-module add anaconda
-conda activate anaconda_env
-module del anaconda
 
 output_dir=$(python -c "import yaml; print(yaml.safe_load(open('config/config.yaml'))['output_dir'])")
 mkdir -p $output_dir

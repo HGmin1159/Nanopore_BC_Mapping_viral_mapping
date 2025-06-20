@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	analysis
+	1	match_variant
+	1	split_reads_dask
+	1	transform_to_csv
+	5
+
+[Fri Jun 20 16:55:49 2025]
+rule transform_to_csv:
+    input: /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap/250430_PBC35003_PR_AAV9_VB_KatMap.dorado.0.9.1.hac.bam
+    output: /proj/hyejunghtsf/HTSF/250430_PBC35003_PR_AAV9_VB_KatMap/result/raw_reads.csv
+    jobid: 1
+
