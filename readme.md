@@ -1,4 +1,4 @@
-⸻
+
 
 # 🔬 MPRA Barcode-Element Mapping (Long-read Nanopore)
 
@@ -36,9 +36,9 @@ anchor_seq: # sequences surrounding the target element and barcode
   - "ACTAGTGATACCGAGCGCTG"
 output_dir: "/your/pathto/output_dir/"
 variant_dict: "/your/pathto/variant_dict.csv"
+```
+---
 
-
-⸻
 
 🚀 Running the Pipeline
 	1.	Install dependencies (recommended: via conda):
